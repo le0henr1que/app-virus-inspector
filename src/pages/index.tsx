@@ -10,7 +10,9 @@ export default function Home() {
       {" "}
       <div className="h-screen w-full flex flex-col items-center justify-between ">
         <Header />
-        <div>MAIN</div>
+        <div>
+          <div></div>
+        </div>
         <Footer />{" "}
       </div>
     </>
