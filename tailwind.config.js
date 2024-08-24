@@ -16,6 +16,9 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
+      fontFamily: {
+        sans: ["Chakra Petch", "sans-serif"],
+      },
     },
     extend: {
       borderColor: (theme) => ({

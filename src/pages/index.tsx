@@ -1,19 +1,18 @@
-// import { Load } from "@/components/load";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 export default function Home() {
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   router.replace("/home");
-  // }, [router]);
-
   return (
-    <div className="flex items-center justify-center h-screen bg-[hsl(var(--background))]">
-      {/* <Load /> */}
-      Virus <Button>Hunter</Button>
-    </div>
+    <>
+      {" "}
+      <div className="h-screen w-full flex flex-col items-center justify-between ">
+        <Header />
+        <div>MAIN</div>
+        <Footer />{" "}
+      </div>
+    </>
   );
 }

@@ -1,3 +1,48 @@
 {
-  "cSpell.words": ["Aparencia"]
+  "workbench.colorTheme": "Aurora X",
+  "workbench.iconTheme": "material-icon-theme",
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "pull:command"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.eol": "\n",
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "terminal.external.windowsExec": "C:\\Windows\\System32\\exe.exe",
+  "hediet.vscode-drawio.resizeImages": null,
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-linux": "/home/leohsfs/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.minikube-path-linux": "/home/leohsfs/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "window.zoomLevel": 1,
+  "window.menuBarVisibility": "compact",
+  "prisma.showPrismaDataPlatformNotification": false,
+  "prisma.enableCodeLens": true,
+  "diffEditor.renderSideBySide": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "cSpell.userWords": ["redoc"],
+  "git.autofetch": true,
+  "[dart]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "remote.portsAttributes": {
+    "5173": {
+      "protocol": "http"
+    }
+  }
 }
