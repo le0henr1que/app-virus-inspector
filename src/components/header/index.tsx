@@ -1,3 +1,4 @@
+import { Icon } from "lucide-react";
 import { Button } from "../ui/button";
 
 export default function Header() {
