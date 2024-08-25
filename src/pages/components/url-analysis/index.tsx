@@ -13,15 +13,13 @@ export default function UrlAnalysis() {
           falsos e ataques de phishing.
         </div>
 
-        <div className=" flex w-full items-center justify-between gap-[8px]">
+        <div className=" flex w-full items-center justify-between gap-[24px] mt-[40px]">
           <Input
             type="text"
             placeholder="Insira a URL do site aqui"
-            className="w-full py-[12px] px-[12px] border border-1 !border-[#A1A1AA] border borde-radius-[2px]"
+            className="w-full py-[12px] px-[12px] border border-1 !border-[#A1A1AA]  border borde-radius-[2px]"
           />
-          <Button className="gap-[8px] py-[0px] px-[40px] text-bold-[1px]">
-            ANALISAR SITE
-          </Button>
+          <Button className=" py-[0px] px-[40px]">ANALISAR SITE</Button>
         </div>
       </div>
     </>
