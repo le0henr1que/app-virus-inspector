@@ -18,7 +18,7 @@ enum ElementsEnum {
 
 //TODO: ADICIONEM OS COMPONENTES QUE VOCÊS ESTÃO DESENVOLVEDO AQUI, OND ESTÃO OS P'S, RESPECTIVAMENTE
 const elements = {
-  [ElementsEnum.ANALYZE_FILES]: <p>Analise de arquivos</p>,
+  [ElementsEnum.ANALYZE_FILES]: <Selection />,
   [ElementsEnum.ANALYZE_URL]: <UrlAnalysis />,
   [ElementsEnum.GENERAL_SEARCH]: <p>Busca geral</p>,
 };
