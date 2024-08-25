@@ -4,11 +4,11 @@ import { Input } from "@/components/ui/input";
 export default function UrlAnalysis() {
   return (
     <>
-      <div className="flex w-full flex-col items-center justify-center ">
-        <div className="text-[28px]">
-          ESSE <span className="text-primary font-bold "> SITE </span> É SEGURO?
+      <div className="flex w-full flex-col items-center justify-center  ">
+        <div className="text-[28px] font-bold">
+          ESSE <span className="text-primary  "> SITE </span> É SEGURO?
         </div>
-        <div className="text-[18px]">
+        <div className="text-[18px] text-[#D4D4D8]">
           Analise um URL que você deseja visitar para detectar malwares, sites
           falsos e ataques de phishing.
         </div>
