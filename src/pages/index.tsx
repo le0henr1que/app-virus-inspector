@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import UrlAnalysis from "./components/url-analysis";
 
 export default function Home() {
   return (
@@ -10,7 +11,10 @@ export default function Home() {
       {" "}
       <div className="h-screen w-full flex flex-col items-center justify-between ">
         <Header />
-        <div>MAIN</div>
+        <div>
+          {" "}
+          <UrlAnalysis />
+        </div>
         <Footer />{" "}
       </div>
     </>
