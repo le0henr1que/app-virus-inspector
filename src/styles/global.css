@@ -62,3 +62,9 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
+
+.border-dashed-custom {
+            border: 1px solid transparent; 
+            border-image: linear-gradient(to right, transparent, transparent 50%, black 50%, black 100%); /* Cria um padrão de traços */
+            border-image-slice: 1; /* Garante que o padrão é aplicado corretamente */
+}
