@@ -7,6 +7,7 @@ import WwwIcon from "@/icons/www";
 import { cn } from "@/lib/utils";
 import { FileIcon } from "lucide-react";
 import { useState } from "react";
+import UrlAnalysis from "./components/url-analysis";
 
 enum ElementsEnum {
   ANALYZE_FILES = "ANALYZE_FILES",
@@ -17,7 +18,7 @@ enum ElementsEnum {
 //TODO: ADICIONEM OS COMPONENTES QUE VOCÊS ESTÃO DESENVOLVEDO AQUI, OND ESTÃO OS P'S, RESPECTIVAMENTE
 const elements = {
   [ElementsEnum.ANALYZE_FILES]: <p>Analise de arquivos</p>,
-  [ElementsEnum.ANALYZE_URL]: <p>Analise de URL</p>,
+  [ElementsEnum.ANALYZE_URL]: <UrlAnalysis />,
   [ElementsEnum.GENERAL_SEARCH]: <p>Busca geral</p>,
 };
 
@@ -98,7 +99,6 @@ export default function Home() {
           </div>
           <div className="mt-[40px] w-full items-center flex flex-col">
             {elements[elementRender]}
-            <Dropzone />
           </div>
         </div>
         <Footer />{" "}
