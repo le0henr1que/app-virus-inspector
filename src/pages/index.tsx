@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import One23Icon from "@/icons/123";
 import WwwIcon from "@/icons/www";
 import { cn } from "@/lib/utils";
-import { FileIcon } from "lucide-react";
+import { FileIcon, Icon } from "lucide-react";
 import { useState } from "react";
 import UrlAnalysis from "./components/url-analysis";
 
