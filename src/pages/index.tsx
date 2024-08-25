@@ -27,7 +27,7 @@ const button = {
     active:
       "!rounded-none w-[242px] !h-[102px] bg-primary hover:bg-primary flex flex-col gap-[16px] text-background !font-bold text-[16px] !p-[16px] hover:text-background !justify-start !items-start",
     normal:
-      "border !border-white !rounded-none w-[242px] !h-[102px]  flex flex-col gap-[16px]  !font-bold text-[16px]  !justify-start !items-start !p-[16px]",
+      "border !border-white !rounded-none w-[242px] !text-white !h-[102px]  flex flex-col gap-[16px]  !font-bold text-[16px]  !justify-start !items-start !p-[16px]",
   },
 };
 
