@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { FileIcon } from "lucide-react";
 import { useState } from "react";
 import UrlAnalysis from "./components/url-analysis";
+import GeneralSearch from "./components/general-search";
 
 enum ElementsEnum {
   ANALYZE_FILES = "ANALYZE_FILES",
@@ -19,7 +20,7 @@ enum ElementsEnum {
 const elements = {
   [ElementsEnum.ANALYZE_FILES]: <p>Analise de arquivos</p>,
   [ElementsEnum.ANALYZE_URL]: <UrlAnalysis />,
-  [ElementsEnum.GENERAL_SEARCH]: <p>Busca geral</p>,
+  [ElementsEnum.GENERAL_SEARCH]: <GeneralSearch />,
 };
 
 const button = {
@@ -33,7 +34,7 @@ const button = {
 
 export default function Home() {
   const [elementRender, setElementRender] = useState(
-    ElementsEnum.ANALYZE_FILES
+    ElementsEnum.GENERAL_SEARCH
   );
 
   const elementActiveHender = (element: ElementsEnum) => {
@@ -46,7 +47,7 @@ export default function Home() {
       {" "}
       <div className="h-screen w-full flex flex-col items-center justify-between ">
         <Header />
-        <div>
+        <div className="flex flex-col h-screen items-center justify-start py-[80px]">
           <div className="flex gap-[24px] ">
             <Button
               type="button"
