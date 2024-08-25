@@ -13,6 +13,7 @@ enum ElementsEnum {
   GENERAL_SEARCH = "GENERAL_SEARCH",
 }
 
+//TODO: ADICIONEM OS COMPONENTES QUE VOCÊS ESTÃO DESENVOLVEDO AQUI, OND ESTÃO OS P'S, RESPECTIVAMENTE
 const elements = {
   [ElementsEnum.ANALYZE_FILES]: <p>Analise de arquivos</p>,
   [ElementsEnum.ANALYZE_URL]: <p>Analise de URL</p>,
