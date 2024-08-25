@@ -1,3 +1,4 @@
+import Dropzone from "@/components/dropzone";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { Button } from "@/components/ui/button";
@@ -97,6 +98,7 @@ export default function Home() {
           </div>
           <div className="mt-[40px] w-full items-center flex flex-col">
             {elements[elementRender]}
+            <Dropzone />
           </div>
         </div>
         <Footer />{" "}
