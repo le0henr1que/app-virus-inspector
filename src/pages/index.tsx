@@ -1,11 +1,12 @@
 import Dropzone from "@/components/dropzone";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Selection from "@/pages/components/arquiveSelection";
 import { Button } from "@/components/ui/button";
 import One23Icon from "@/icons/123";
 import WwwIcon from "@/icons/www";
 import { cn } from "@/lib/utils";
-import { FileIcon } from "lucide-react";
+import { FileIcon, Icon } from "lucide-react";
 import { useState } from "react";
 import UrlAnalysis from "./components/url-analysis";
 import GeneralSearch from "./components/general-search";
@@ -18,7 +19,7 @@ enum ElementsEnum {
 
 //TODO: ADICIONEM OS COMPONENTES QUE VOCÊS ESTÃO DESENVOLVEDO AQUI, OND ESTÃO OS P'S, RESPECTIVAMENTE
 const elements = {
-  [ElementsEnum.ANALYZE_FILES]: <p>Analise de arquivos</p>,
+  [ElementsEnum.ANALYZE_FILES]: < Selection />,
   [ElementsEnum.ANALYZE_URL]: <UrlAnalysis />,
   [ElementsEnum.GENERAL_SEARCH]: <GeneralSearch />,
 };
