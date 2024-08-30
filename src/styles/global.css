@@ -68,3 +68,25 @@ body {
             border-image: linear-gradient(to right, transparent, transparent 50%, black 50%, black 100%); /* Cria um padrão de traços */
             border-image-slice: 1; /* Garante que o padrão é aplicado corretamente */
 }
+
+
+.bg-primary.bg-opacity-8 {
+  background-color: rgba(65, 169, 72, 0.08);
+ /* Ajuste o valor 0.08 conforme necessário */
+}
+/* arrumar essa estilização */
+/* .dragging {
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: chakra-petch;
+    font-size: 14px;
+   cursor: url('/arquive.svg'), auto;
+}
+
+#file-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+} */

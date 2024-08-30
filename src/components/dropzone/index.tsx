@@ -1,30 +1,74 @@
-import React, { useCallback } from "react";
-import { useDropzone } from "react-dropzone";
-import { cn } from "@/lib/utils";
+  import React, { useCallback,useState, useEffect } from "react";
+  import { useDropzone } from "react-dropzone";
+  import { cn } from "@/lib/utils";
+  import Upload from "../dropfile";
 
-const Dropzone = () => {
-  const onDrop = useCallback((acceptedFiles) => {
-    console.log(acceptedFiles);
-  }, []);
+  const Dropzone = () => {
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
+    const [isDragging, setIsDragging] = useState(false);
+    
+  //    const onDragEnter = () => {
+  //   setIsDragging(true);
+  //   document.body.classList.add('dragging');
+  // };
+  //   const onDragLeave = () => {
+  //   setIsDragging(false);
+  //   document.body.classList.remove('dragging');
+  // };
 
-  return (
-    <div
-      {...getRootProps()}
-      className={cn(
-        "border-2 border-dashed border-gray-400 p-6 rounded-md flex flex-col items-center justify-center",
-        { "bg-gray-100": isDragActive }
-      )}
-    >
-      <input {...getInputProps()} />
-      <p className="text-gray-600">
-        {isDragActive
-          ? "Solte o arquivo aqui..."
-          : "Arraste e solte um arquivo aqui, ou clique para selecionar um arquivo"}
-      </p>
-    </div>
-  );
-};
+  //   const onDrop = useCallback((acceptedFiles) => {
+  //   console.log(acceptedFiles);
+  //   setIsDragging(false);
+  //   document.body.classList.remove('dragging');
+  // }, []);
 
-export default Dropzone;
+                                                          
+  // useEffect(() => {
+  //   const handleDragOver = (event) => {
+  //     event.preventDefault();
+  //   };
+
+  //   window.addEventListener('dragover', handleDragOver);
+  //   window.addEventListener('dragenter', onDragEnter);
+  //   window.addEventListener('dragleave', onDragLeave);
+
+  //   return () => {
+  //     window.removeEventListener('dragover', handleDragOver);
+  //     window.removeEventListener('dragenter', onDragEnter);
+  //     window.removeEventListener('dragleave', onDragLeave);
+  //   };
+  // }, [onDragEnter, onDragLeave]);
+    
+  
+
+    const { getRootProps, getInputProps, isDragActive, isDragAccept, isDragReject } = useDropzone({ });
+
+  
+
+    return (
+      <div
+        {...getRootProps()}
+        className={`border-2 border-dashed border-primary p-6 rounded-md flex flex-col items-center justify-center
+        ${isDragActive || isDragAccept ? ' bg-opacity-8 bg-primary '  : ''}
+        ${isDragging ? 'dropzone' : ''}
+
+  `}
+
+         
+      >
+        <input {...getInputProps()} />
+        {isDragActive ? (
+          <Upload/>
+        ) : (
+          <Upload/>
+        )}
+        
+          
+        
+      </div>
+
+      
+    );
+  };
+
+  export default Dropzone;

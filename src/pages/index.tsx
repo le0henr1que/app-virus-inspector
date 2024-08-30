@@ -19,7 +19,7 @@ enum ElementsEnum {
 //TODO: ADICIONEM OS COMPONENTES QUE VOCÊS ESTÃO DESENVOLVEDO AQUI, OND ESTÃO OS P'S, RESPECTIVAMENTE
 const elements = {
   [ElementsEnum.ANALYZE_FILES]: < Selection />,
-  [ElementsEnum.ANALYZE_URL]: <UrlAnalysis />,
+    [ElementsEnum.ANALYZE_URL]: <UrlAnalysis />,
   [ElementsEnum.GENERAL_SEARCH]: <p>Busca geral</p>,
 };
 
@@ -100,7 +100,7 @@ export default function Home() {
           </div>
           <div className="mt-[40px] w-full items-center flex flex-col">
             {elements[elementRender]}
-          </div>
+                      </div>
         </div>
         <Footer />{" "}
       </div>

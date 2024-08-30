@@ -24,8 +24,13 @@ module.exports = {
       borderColor: (theme) => ({
         DEFAULT: "hsl(var(--border))",
       }),
+
+       opacity: {
+        '8': '0.08',
+      },
       
       colors: {
+        'custom-gray': '#D4D4D8',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -60,6 +65,9 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        opacity: {
+        '8': '0.08',
+      },
       },
       borderRadius: {
         xl: `calc(var(--radius) + 4px)`,
